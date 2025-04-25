@@ -2,13 +2,25 @@
   "name": "@ke-accountability/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx dev ke-accountability",
+    "build": "nx build ke-accountability",
+    "start": "nx start ke-accountability",
+    "lint": "nx lint ke-accountability",
+    "test": "nx test ke-accountability",
+    "create-admin": "node scripts/create-admin.js",
+    "migrate": "echo 'No migrations to run'"
+  },
   "private": true,
   "dependencies": {
     "next": "^14.2.4",
+    "next-auth": "^4.24.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^8.1.0",
+    "ethers": "^6.10.0"
   },
   "devDependencies": {
     "@nx/eslint": "19.0.8",
